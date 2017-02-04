@@ -1,0 +1,58 @@
+.battlefield-wrapper {
+	display: flex;
+}
+
+.battlefield {
+	margin: 20px;
+	border: solid 1px #000;
+	position: relative;
+}
+
+.ship {
+	border: solid 1px #000;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+.rotated {
+	transform: rotate( 90deg );
+}
+
+.collision {
+	border-color: red;
+}
+
+.aim {
+	position: absolute;
+	background: rgba( 100, 100, 100, .2 );
+	display: none;
+}
+
+.marker {
+	position: absolute;
+	background: rgba(255,0,0,.3);
+}
+
+.missed {
+	background: rgba(255,0,0,.3);
+}
+
+.hit {
+	background: rgba(0,255,0,.3);
+}
+
+.active {
+	display: block;
+}
+
+.battlefield.inactive {
+	opacity: .2;
+}
+
+input {
+	margin: 10px;
+	font-size: 16px;
+	display: block;
+	width: 90%;
+	padding: 5px;
+}
