@@ -1,58 +1,75 @@
-.battlefield-wrapper {
-	display: flex;
-}
+.battleships {
+	* {
+		box-sizing: border-box;
+	}
 
-.battlefield {
-	margin: 20px;
-	border: solid 1px #000;
-	position: relative;
-}
+	.buttons {
+		padding-bottom: 10px;
 
-.ship {
-	border: solid 1px #000;
-	position: absolute;
-	box-sizing: border-box;
-}
+		button {
+			margin: 0 5px;
+		}
+	}
 
-.rotated {
-	transform: rotate( 90deg );
-}
+	&-battlefields {
+		display: flex;
+		justify-content: space-between;
 
-.collision {
-	border-color: red;
-}
+		.battlefield {
+			border: solid 1px #000;
+			position: relative;
 
-.aim {
-	position: absolute;
-	background: rgba( 100, 100, 100, .2 );
-	display: none;
-}
+			&.inactive {
+				opacity: .2;
+			}
 
-.marker {
-	position: absolute;
-	background: rgba(255,0,0,.3);
-}
+			&.invite {
+				padding: 10px;
+			}
 
-.missed {
-	background: rgba(255,0,0,.3);
-}
+			.ship {
+				border: solid 1px #000;
+				position: absolute;
+				box-sizing: border-box;
 
-.hit {
-	background: rgba(0,255,0,.3);
-}
+				&.rotated {
+					transform: rotate( 90deg );
+				}
 
-.active {
-	display: block;
-}
+				&.collision {
+					border-color: red;
+				}
+			}
 
-.battlefield.inactive {
-	opacity: .2;
-}
+			.aim {
+				position: absolute;
+				background: rgba( 100, 100, 100, .2 );
+				display: none;
 
-input {
-	margin: 10px;
-	font-size: 16px;
-	display: block;
-	width: 90%;
-	padding: 5px;
+				&.active {
+					display: block;
+				}
+			}
+
+			.marker {
+				position: absolute;
+				background: rgba(255,0,0,.3);
+
+				&.missed {
+					background: rgba(255,0,0,.3);
+				}
+
+				&.hit {
+					background: rgba(0,255,0,.3);
+				}
+			}
+		}
+	}
+
+	input {
+		font-size: 16px;
+		width: 100%;
+		display: block;
+		padding: 5px;
+	}
 }
