@@ -1,1 +1,4 @@
-import '../styles/scss';
+import '../styles/style.scss';
+
+export default function theme() {
+}
