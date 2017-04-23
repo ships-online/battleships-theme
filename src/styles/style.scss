@@ -19,7 +19,10 @@
 			border: solid 1px #9d9d9d;
 			position: relative;
 			padding: 0 1px 1px 0;
-			background: url( '../images/border.svg' );
+
+			&:not(.invite) {
+				background: url('../images/border.svg');
+			}
 
 			&.inactive {
 				opacity: .2;
