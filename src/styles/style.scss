@@ -6,66 +6,66 @@
 		box-sizing: border-box;
 	}
 
+	.menu {
+		text-align: left;
+		padding: 10px 0;
+	}
+
 	.fields-container {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	&__field {
-		border: solid 1px #9d9d9d;
+	.field {
+		border: solid 1px #757575;
 		position: relative;
 		padding: 10px;
 
-		&_battlefield {
+		&.battlefield {
 			background: url('../images/border.svg');
 			padding: 0 1px 1px 0;
-		}
+			transition: opacity .5s;
 
-		&.inactive {
-			opacity: .2;
+			&.inactive {
+				opacity: .2;
+			}
+
+			.ship {
+				border: solid 2px #000;
+				position: absolute;
+				margin: -1px 0 0 -1px;
+
+				&--collision {
+					border-color: red;
+				}
+			}
+
+			.aim {
+				position: absolute;
+				background: rgba(100, 100, 100, .2);
+				display: none;
+
+				&.active {
+					display: block;
+				}
+			}
+
+			.marker {
+				position: absolute;
+				background: rgba(255, 0, 0, .3);
+
+				&.missed {
+					background: rgba(255, 0, 0, .3);
+				}
+
+				&.hit {
+					background: rgba(0, 255, 0, .3);
+				}
+			}
 		}
 
 		&.invite {
-			input {
-				margin: 3px 0 10px;
-			}
 
-			.count {
-				margin-top: 0;
-			}
-		}
-
-		.ship {
-			border: solid 2px #000;
-			position: absolute;
-			margin: -1px 0 0 -1px;
-
-			&-collision {
-				border-color: red;
-			}
-		}
-
-		.aim {
-			position: absolute;
-			background: rgba(100, 100, 100, .2);
-			display: none;
-
-			&-active {
-				display: block;
-			}
-		}
-
-		.marker {
-			position: absolute;
-			background: rgba(255, 0, 0, .3);
-
-			&.missed {
-				background: rgba(255, 0, 0, .3);
-			}
-
-			&.hit {
-				background: rgba(0, 255, 0, .3);
-			}
 		}
 	}
 
@@ -96,14 +96,5 @@
 		padding: 5px;
 		border: solid 1px #9d9d9d;
 		border-radius: 4px;
-	}
-
-	.buttons {
-		padding-top: 15px;
-		text-align: left;
-
-		button {
-			margin: 0 20px 0 0;
-		}
 	}
 }
