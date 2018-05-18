@@ -1,0 +1,57 @@
+.settings {
+	.settings-button {
+		position: relative;
+		z-index: 1;
+	}
+
+	&.active {
+		.settings-button {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	.settings-panel {
+		position: absolute;
+		right: 0;
+		width: 395px;
+		text-align: left;
+		border: solid 1px #9c9c9c;
+		background: #fff;
+		padding: 20px;
+		outline: 0;
+		transform: translateY( -1px );
+
+		& > p {
+			margin-bottom: 0;
+		}
+
+		input {
+			font-size: 14px;
+			padding: 2px 5px 3px;
+			width: 48px;
+			text-align: center;
+		}
+
+		button {
+			font-size: 14px;
+			padding: 2px 5px 3px;
+		}
+
+		ul, li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			&:not(:first-child) {
+				margin-top: 4px;
+			}
+
+			input {
+				margin-right: 10px;
+			}
+		}
+	}
+}
