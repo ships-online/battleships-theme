@@ -1,0 +1,44 @@
+button {
+	font-size: 1em;
+	border: solid 1px var( --battleships-button-border-color );
+	color: var( --battleships-button-color );
+	background: var( --battleships-button-background-color );
+	padding: 5px 10px 6px;
+	border-radius: 4px;
+	transition: .08s;
+	transition-property: color, background;
+
+	&[disabled] {
+		opacity: 0.5;
+	}
+
+	&:hover:not([disabled]) {
+		color: var( --battleships-button-hover-color );
+		background: var( --battleships-button-hover-background-color );
+	}
+}
+
+input {
+	font-size: 1em;
+	width: 100%;
+	padding: 5px;
+	border: solid 1px var( --battleships-button-border-color );
+	border-radius: 4px;
+}
+
+.input-group {
+	display: flex;
+	align-content: space-between;
+
+	input {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	button {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-left: 0;
+		width: 90px;
+	}
+}
