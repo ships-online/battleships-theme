@@ -8,10 +8,6 @@ button {
 	transition: .08s;
 	transition-property: color, background;
 
-	&[disabled] {
-		opacity: 0.5;
-	}
-
 	&:hover:not([disabled]) {
 		color: var( --battleships-button-hover-color );
 		background: var( --battleships-button-hover-background-color );
@@ -24,6 +20,13 @@ input {
 	padding: 5px;
 	border: solid 1px var( --battleships-button-border-color );
 	border-radius: 4px;
+}
+
+input,
+button {
+	&[disabled] {
+		opacity: 0.5;
+	}
 }
 
 .input-group {
