@@ -1,5 +1,9 @@
 :root {
-	--battleships-field-border-color: #757575;
+	--battleships-font-color: #000;
+	--battleships-font-family: Arial, sans-serif;
+	--battleships-font-size: 16px;
+
+	--battleships-border-radius: 4px;
 
 	--battleships-button-color: #555;
 	--battleships-button-background-color: #fff;
@@ -7,15 +11,10 @@
 	--battleships-button-hover-color: #000;
 	--battleships-button-hover-background-color: #e1e1e1;
 
+	--battleships-field-border-color: #757575;
+	--battleships-field-background-color: #fff;
+	--battleships-field-grid-color: #c1c1c1;
+
 	--battleships-ship-border-color: #000;
 	--battleships-ship-collision-border-color: red;
-}
-
-.battleships {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-
-	&, * {
-		box-sizing: border-box;
-	}
 }
