@@ -1,7 +1,9 @@
-:root {
+.battleships {
 	--battleships-font-color: #000;
 	--battleships-font-family: Arial, sans-serif;
 	--battleships-font-size: 16px;
+
+	--battleships-background-color: #fff;
 
 	--battleships-border-radius: 4px;
 
@@ -16,5 +18,7 @@
 	--battleships-field-grid-color: #c1c1c1;
 
 	--battleships-ship-border-color: #000;
+	--battleships-ship-background-color: transparent;
 	--battleships-ship-collision-border-color: red;
+	--battleships-ship-collision-background-color: transparent;
 }

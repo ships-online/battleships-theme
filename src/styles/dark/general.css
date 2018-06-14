@@ -1,0 +1,24 @@
+.battleships.battleships-dark {
+	--battleships-font-color: #d4d3d3;
+	--battleships-font-family: Arial, sans-serif;
+	--battleships-font-size: 16px;
+
+	--battleships-background-color: #000;
+
+	--battleships-border-radius: 4px;
+
+	--battleships-button-color: #d4d3d3;
+	--battleships-button-background-color: #000;
+	--battleships-button-border-color: #bdbdbd;
+	--battleships-button-hover-color: #000;
+	--battleships-button-hover-background-color: #e1e1e1;
+
+	--battleships-field-border-color: #b5b5b5;
+	--battleships-field-grid-color: #585858;
+	--battleships-field-background-color: #000;
+
+	--battleships-ship-border-color: #9a9a9a;
+	--battleships-ship-background-color: rgba(255,255,255,.4);
+	--battleships-ship-collision-border-color: #dc3545;
+	--battleships-ship-collision-background-color: rgba(197,144,140,.6);
+}

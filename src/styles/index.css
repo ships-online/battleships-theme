@@ -1,2 +1,6 @@
 @import "default/general.css";
 @import "default/form.css";
+
+.battheships-dark {
+	@import "dark/general.css";
+}
