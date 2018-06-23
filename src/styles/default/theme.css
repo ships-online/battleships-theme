@@ -20,6 +20,10 @@
 	--battleships-field-background-color: #fff;
 	--battleships-field-grid-color: #c1c1c1;
 
+	--battleships-aim-background: rgba(100, 100, 100, .2);
+	--battleships-stamp-missed: rgba(255, 0, 0, .3);
+	--battleships-stamp-hit: rgba(0, 255, 0, .3);
+
 	--battleships-ship-border-color: #000;
 	--battleships-ship-background-color: transparent;
 	--battleships-ship-collision-border-color: red;
