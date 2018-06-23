@@ -32,4 +32,8 @@
 	.battlefield.inactive {
 		opacity: .4;
 	}
+
+	footer svg {
+		fill: #fff;
+	}
 }
