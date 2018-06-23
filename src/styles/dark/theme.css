@@ -16,7 +16,7 @@
 	--battleships-input-color: #fff;
 	--battleships-input-background-color: #3a3a3a;
 
-	--battleships-field-border-color: #b5b5b5;
+	--battleships-field-border-color: #fff;
 	--battleships-field-grid-color: #585858;
 	--battleships-field-background-color: #000;
 
@@ -24,8 +24,12 @@
 	--battleships-stamp-missed: rgba(255, 0, 0, .5);
 	--battleships-stamp-hit: rgba(0, 255, 0, .45);
 
-	--battleships-ship-border-color: #9a9a9a;
+	--battleships-ship-border-color: #dadada;
 	--battleships-ship-background-color: rgba(255,255,255,.4);
 	--battleships-ship-collision-border-color: #dc3545;
 	--battleships-ship-collision-background-color: rgba(197,144,140,.6);
+
+	.battlefield.inactive {
+		opacity: .4;
+	}
 }
