@@ -19,6 +19,7 @@
 	--battleships-field-border-color: #fff;
 	--battleships-field-grid-color: #585858;
 	--battleships-field-background-color: #000;
+	--battleships-field-inactive-opacity: .4;
 
 	--battleships-aim-background: rgba(255, 255, 255, .3);
 	--battleships-stamp-missed: rgba(255, 0, 0, .5);
@@ -28,10 +29,6 @@
 	--battleships-ship-background-color: rgba(255,255,255,.4);
 	--battleships-ship-collision-border-color: #dc3545;
 	--battleships-ship-collision-background-color: rgba(197,144,140,.6);
-
-	.battlefield.inactive {
-		opacity: .4;
-	}
 
 	footer svg {
 		fill: #fff;

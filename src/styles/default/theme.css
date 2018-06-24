@@ -19,6 +19,7 @@
 	--battleships-field-border-color: #757575;
 	--battleships-field-background-color: #fff;
 	--battleships-field-grid-color: #c1c1c1;
+	--battleships-field-inactive-opacity: .2;
 
 	--battleships-aim-background: rgba(100, 100, 100, .2);
 	--battleships-stamp-missed: rgba(255, 0, 0, .3);
